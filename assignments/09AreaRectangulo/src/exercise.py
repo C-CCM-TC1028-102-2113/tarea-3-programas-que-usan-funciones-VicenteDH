@@ -1,7 +1,7 @@
-
-def main():
-    #escribe tu código abajo de esta línea
-    pass
-
-if __name__=='__main__':
-    main()
+base=float(input("Dame la base: "))
+altura=float(input("Dame la altura: "))
+def main(base,altura):
+    area=base*altura
+    return(area)
+respuesta=main(base,altura)
+print("El área del rectángulo es: "+str(respuesta))
