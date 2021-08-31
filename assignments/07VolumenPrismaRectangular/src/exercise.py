@@ -1,14 +1,19 @@
-def main(base,profundidad):
-    arect=base*profundidad
+def main():
+    base=float(input("Dame la base: "))
+    altura= float(input("Dame la altura: "))
+    profundidad=float(input("Dame la profundidad: "))
+    a= area(base,profundidad)
+    c=vol(a,altura)
+    print("El volumen del prisma es: "+str(c))
+    pass
+
+def area(b,p):
+    arect=b*p
     return (arect)
 
-def vol(area,altura):
-    cal=area*altura
+def vol(ar,al):
+    cal=ar*al
     return(cal)
 
-base=float(input("Dame la base: "))
-altura= float(input("Dame la altura: "))
-profundidad=float(input("Dame la profundidad: "))
-area=main(base, profundidad)
-volumen=vol(area,altura)
-print("El volumen del prisma es: "+str(volumen))
+if __name__ == '__main__':
+    main()
