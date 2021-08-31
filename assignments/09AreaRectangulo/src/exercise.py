@@ -1,7 +1,11 @@
-base=float(input("Dame la base: "))
-altura=float(input("Dame la altura: "))
-def main(base,altura):
-    area=base*altura
+def main():
+    base= float(input("Dame la base: "))
+    altura= float(input("Dame la altura: "))
+    c=(rect(base,altura))
+    print("El área del rectángulo es: "+str(c))
+    pass
+def rect(b,a):
+    area=b*a
     return(area)
-respuesta=main(base,altura)
-print("El área del rectángulo es: "+str(respuesta))
+if __name__=='__main__':
+    main()
