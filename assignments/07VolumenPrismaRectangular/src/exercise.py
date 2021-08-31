@@ -2,8 +2,9 @@ def main():
     base=float(input("Dame la base: "))
     altura= float(input("Dame la altura: "))
     profundidad=float(input("Dame la profundidad: "))
-    a= area(base,profundidad)
-    c=vol(a,altura)
+    a= area(base,altura)
+    c=vol(a,profundidad)
+    c=round(c,1)
     print("El volumen del prisma es: "+str(c))
     pass
 
