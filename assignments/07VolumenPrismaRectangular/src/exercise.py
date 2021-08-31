@@ -4,7 +4,6 @@ def main():
     profundidad=float(input("Dame la profundidad: "))
     a= area(base,altura)
     c=vol(a,profundidad)
-    c=round(c,1)
     print("El volumen del prisma es: "+str(c))
     pass
 
